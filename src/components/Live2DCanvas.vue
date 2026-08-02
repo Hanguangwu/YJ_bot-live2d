@@ -5,7 +5,7 @@ import { useLive2D, type UseLive2DReturn } from '../composables/useLive2D'
 const props = withDefaults(defineProps<{
   modelPath?: string
 }>(), {
-  modelPath: '/shizuku_ja/runtime/shizuku.model3.json',
+  modelPath: './shizuku_ja/runtime/shizuku.model3.json',
 })
 
 const emit = defineEmits<{
