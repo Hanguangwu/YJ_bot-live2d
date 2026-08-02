@@ -78,6 +78,7 @@ defineExpose<UseLive2DReturn>({
   width: 100vw;
   height: 100vh;
   display: block;
-  z-index: 0;
+  z-index: 1;
+  background: transparent;
 }
 </style>
