@@ -8,7 +8,6 @@ export interface UseBackgroundCarouselReturn {
   stop: () => void
 }
 
-// The images are in public/imgs/ — Vite serves them at /imgs/
 const IMAGE_FILES = [
   'alan_frijns-ai-7685862_1920.jpg',
   'alan_frijns-ai-art-7717056_1920.jpg',
@@ -27,7 +26,7 @@ export function useBackgroundCarousel(
   const isTransitioning = ref(false)
   let timer: ReturnType<typeof setInterval> | null = null
 
-  const images = IMAGE_FILES.map((f) => `/imgs/${f}`)
+  const images = IMAGE_FILES.map((f) => `./imgs/${f}`)
 
   function advance() {
     isTransitioning.value = true
